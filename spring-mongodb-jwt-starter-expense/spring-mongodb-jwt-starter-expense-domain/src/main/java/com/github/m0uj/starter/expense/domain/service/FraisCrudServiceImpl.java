@@ -1,4 +1,4 @@
-package service;
+package com.github.m0uj.starter.expense.domain.service;
 
 import com.github.m0uj.starter.expense.storage.dao.FraisRepository;
 import com.github.m0uj.starter.expense.storage.pojo.DOC_FRAIS;

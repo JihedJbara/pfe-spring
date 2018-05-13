@@ -1,4 +1,4 @@
-package service;
+package com.github.m0uj.starter.expense.domain.service;
 
 import com.github.m0uj.starter.expense.storage.dao.EMPLFraisRepository;
 import com.github.m0uj.starter.expense.storage.pojo.EMPL_FRAIS;
@@ -31,7 +31,7 @@ public class EMPLFraisCrudServiceImpl implements EMPLFraisCrudService{
     }
 
     public void saveSalarie(EMPL_FRAIS empl_frais) {
-      //  empl_frais.setId(counter.incrementAndGet());
-        // salarie.add(salarie);
+        emplFraisRepository.save(empl_frais);
+
     }
 }

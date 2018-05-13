@@ -1,4 +1,4 @@
-package service;
+package com.github.m0uj.starter.expense.domain.service;
 
 import com.github.m0uj.starter.expense.storage.pojo.EMPL_FRAIS;
 import com.github.m0uj.starter.expense.storage.pojo.UserPK;

@@ -12,6 +12,6 @@ import javax.transaction.Transactional;
  */
 @Transactional
 public interface GRPEmplFRepository extends CrudRepository<GRP_EMPL_FRAIS,UserPK2> {
-    public GRP_EMPL_FRAIS findByIdAndGRP(int T_SOCAB , char C_GRP_EMPL_FRAIS);
+    public GRP_EMPL_FRAIS findByIdAndGRP(UserPK2 id);
 
 }
