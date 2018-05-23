@@ -12,7 +12,7 @@ import javax.validation.Valid;
  * Created by Jihed-pc on 14/05/2018.
  */
 @RestController
-@RequestMapping("api/v2")
+@RequestMapping("api/v1")
 public class DocFraisController {
 
 
@@ -26,7 +26,7 @@ public class DocFraisController {
     }
 
     @CrossOrigin("**")
-    @RequestMapping(value = "/CreateFrais", method = RequestMethod.POST)
+    @RequestMapping(value = "/frais", method = RequestMethod.POST)
     public DOC_FRAISDTO CreateUser(@RequestBody @Valid DOC_FRAISDTO doc_fraisdto)
     {
 
@@ -38,4 +38,6 @@ public class DocFraisController {
        // user.setEnable(true);
         return modelMapper.map(fraisCrudService.create(doc_frais), DOC_FRAISDTO.class);
     }
+
+
 }

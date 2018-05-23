@@ -5,10 +5,20 @@ package com.github.m0uj.starter.expense.web.controller.dto;
  */
 public class DOC_FRAISDTO {
 
+
+    private Long tDocFrais;
     private float total_fdepense;
     private float total_frais;
     private int total_nbre_km;
     private int totale_froute;
+
+    public Long gettDocFrais() {
+        return tDocFrais;
+    }
+
+    public void settDocFrais(Long tDocFrais) {
+        this.tDocFrais = tDocFrais;
+    }
 
     public float getTotal_fdepense() {
         return total_fdepense;
