@@ -23,6 +23,6 @@ public class GRPEmplCrudServiceImpl implements GRPEmplCrudService {
 
     @Override
     public GRP_EMPL_FRAIS read(UserPK2 id) {
-        return grpEmplFRepository.findByIdAndGRP(id);
+        return grpEmplFRepository.findByUserPK2(id);
     }
 }

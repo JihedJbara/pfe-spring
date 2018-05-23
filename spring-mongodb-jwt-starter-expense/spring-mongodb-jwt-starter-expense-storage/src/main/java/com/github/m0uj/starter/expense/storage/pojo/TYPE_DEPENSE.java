@@ -9,7 +9,7 @@ import java.util.List;
 @Entity
 public class TYPE_DEPENSE {
     @Id
-    private char C_TYPE_DEPENSE;
+    private char cTypeDepense;
     private String INTITULE;
     private char C_TYPE_FRAIS;
 
@@ -20,12 +20,12 @@ public class TYPE_DEPENSE {
     @JoinColumn(name="TYPE_FRAIS_ID")
     private TYPE_FRAIS type_frais;
 
-    public char getC_TYPE_DEPENSE() {
-        return C_TYPE_DEPENSE;
+    public char getcTypeDepense() {
+        return cTypeDepense;
     }
 
-    public void setC_TYPE_DEPENSE(char c_TYPE_DEPENSE) {
-        C_TYPE_DEPENSE = c_TYPE_DEPENSE;
+    public void setcTypeDepense(char cTypeDepense) {
+        this.cTypeDepense = cTypeDepense;
     }
 
     public String getINTITULE() {

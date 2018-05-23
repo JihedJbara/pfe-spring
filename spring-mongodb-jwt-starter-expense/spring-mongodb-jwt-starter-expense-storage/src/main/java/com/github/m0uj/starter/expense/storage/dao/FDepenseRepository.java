@@ -11,7 +11,7 @@ import javax.transaction.Transactional;
  */
 @Transactional
 public interface FDepenseRepository extends CrudRepository<F_DEPENSE ,Integer> {
-    public F_DEPENSE findById(int T_FDEPENSE);
+    public F_DEPENSE findByTFDepense(int T_FDEPENSE);
 
 
 }

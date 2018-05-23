@@ -20,6 +20,6 @@ public class TYPEFriasCrudServiceImpl implements TYPEFraisCrudService{
 
     @Override
     public TYPE_FRAIS read(char id) {
-        return typeFraisRepository.findById(id);
+        return typeFraisRepository.findByCTypeDepense(id);
     }
 }

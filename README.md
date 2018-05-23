@@ -17,7 +17,7 @@ you will need to:
 ### Clone repository and install Maven dependencies
 You will need to clone the source code of spring-mongodb-jwt-starter GitHub repository:
 
-    git clone https://github.com/m0uj/spring-mongodb-jwt-starter.git
+    git clone https://https://github.com/JihedJbara/pfe-spring
 
 Go inside the repository's directory and install the Maven dependencies:
 

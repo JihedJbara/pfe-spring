@@ -11,6 +11,6 @@ import javax.transaction.Transactional;
  */
 @Transactional
 public interface EMPLFraisRepository extends CrudRepository<EMPL_FRAIS , UserPK> {
-    public EMPL_FRAIS findByIdAndGrp_empl_frais (UserPK id);
+    public EMPL_FRAIS findByUserPK (UserPK id);
 
 }

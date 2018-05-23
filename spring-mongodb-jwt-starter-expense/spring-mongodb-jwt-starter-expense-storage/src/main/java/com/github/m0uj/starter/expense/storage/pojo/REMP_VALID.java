@@ -1,5 +1,6 @@
 package com.github.m0uj.starter.expense.storage.pojo;
 
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
@@ -10,15 +11,10 @@ import java.util.Date;
  * Created by Jihed-pc on 13/03/2018.
  */
 @Entity
-@IdClass(UserPK4.class)
-public class REMP_VALID implements Serializable{
-    @Id
-    private int T_USER_REMPL;
-    @Id
-    private int T_USER_VALID;
-    @Id
-    private Date DT_DEBUT;
 
+public class REMP_VALID implements Serializable{
+    @EmbeddedId
+    private UserPK4 userPK4;
 
 
 

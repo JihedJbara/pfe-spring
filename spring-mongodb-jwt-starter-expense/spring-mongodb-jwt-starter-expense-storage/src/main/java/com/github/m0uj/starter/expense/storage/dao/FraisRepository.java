@@ -11,5 +11,5 @@ import javax.transaction.Transactional;
 @Transactional
 public interface FraisRepository  extends CrudRepository<DOC_FRAIS, Long> {
 
-    public DOC_FRAIS findById(String id);
+    public DOC_FRAIS findByTDocFrais(Long id);
 }

@@ -22,6 +22,6 @@ public class TYPEDepenseCrudServiceImpl implements TYPEDepenseCrudService {
 
     @Override
     public TYPE_DEPENSE read(char id) {
-        return typeDepRepositoy.findById(id);
+        return typeDepRepositoy.findByCTypeDepense(id);
     }
 }

@@ -24,6 +24,6 @@ public class FDepenseCrudServiceImpl implements FDepenseCrudService {
 
     @Override
     public F_DEPENSE read(int id) {
-        return fDepenseRepository.findById(id);
+        return fDepenseRepository.findByTFDepense(id);
     }
 }

@@ -22,6 +22,6 @@ public class FRouteCrudServiceImpl implements FRouteCrudService {
 
     @Override
     public F_ROUTE read(int id) {
-        return fRouteRepository.findById(id);
+        return fRouteRepository.findByTFRoute(id);
     }
 }

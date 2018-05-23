@@ -27,7 +27,7 @@ public class EMPLFraisCrudServiceImpl implements EMPLFraisCrudService{
 
     @Override
     public EMPL_FRAIS read(UserPK id) {
-        return emplFraisRepository.findByIdAndGrp_empl_frais(id);
+        return emplFraisRepository.findByUserPK(id);
     }
 
     public void saveSalarie(EMPL_FRAIS empl_frais) {

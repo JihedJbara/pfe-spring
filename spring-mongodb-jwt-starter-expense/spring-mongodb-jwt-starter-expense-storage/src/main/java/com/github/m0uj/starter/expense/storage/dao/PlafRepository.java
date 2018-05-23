@@ -13,6 +13,6 @@ import java.util.Date;
  */
 @Transactional
 public interface PlafRepository extends CrudRepository<PLAF_DEPENSE,UserPK3> {
-    public PLAF_DEPENSE findByIdAndType (UserPK3 id);
+    public PLAF_DEPENSE findByUserPK3 (UserPK3 id);
 
 }

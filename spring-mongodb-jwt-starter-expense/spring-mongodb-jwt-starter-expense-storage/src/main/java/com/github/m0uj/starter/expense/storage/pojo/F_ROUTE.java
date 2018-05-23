@@ -10,7 +10,7 @@ import java.util.Date;
 public class F_ROUTE {
 
     @Id
-    private int T_FROUTE;
+    private int tFRoute;
     private int T_DOC_FRAIS;
     private Date DT_FROUTE;
     private String REMARQUE;
@@ -20,12 +20,12 @@ public class F_ROUTE {
     @JoinColumn(name="DOC_FRAIS_ID")
     private DOC_FRAIS doc_fraiss;
 
-    public int getT_FROUTE() {
-        return T_FROUTE;
+    public int gettFRoute() {
+        return tFRoute;
     }
 
-    public void setT_FROUTE(int t_FROUTE) {
-        T_FROUTE = t_FROUTE;
+    public void settFRoute(int tFRoute) {
+        this.tFRoute = tFRoute;
     }
 
     public int getT_DOC_FRAIS() {

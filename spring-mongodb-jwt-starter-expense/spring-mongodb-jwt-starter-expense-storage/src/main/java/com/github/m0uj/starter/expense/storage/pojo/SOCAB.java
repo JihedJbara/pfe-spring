@@ -9,13 +9,13 @@ import javax.persistence.Id;
 @Entity
 public class SOCAB {
     @Id
-    private int T_SOCAB;
+    private int tSocab;
 
-    public int getT_SOCAB() {
-        return T_SOCAB;
+    public int gettSOCAB() {
+        return tSocab;
     }
 
-    public void setT_SOCAB(int t_SOCAB) {
-        T_SOCAB = t_SOCAB;
+    public void settSOCAB(int tSOCAB) {
+        this.tSocab = tSOCAB;
     }
 }

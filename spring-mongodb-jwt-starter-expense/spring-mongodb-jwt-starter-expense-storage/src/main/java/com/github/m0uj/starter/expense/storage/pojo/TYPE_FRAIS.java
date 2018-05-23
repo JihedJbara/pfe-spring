@@ -13,7 +13,7 @@ import java.util.List;
 public class TYPE_FRAIS {
 
     @Id
-    private char C_TYPE_DEPENSE;
+    private char cTypeDepense;
 
     private String INITULE;
 
@@ -28,12 +28,12 @@ public class TYPE_FRAIS {
         this.INITULE = INITULE;
     }
 
-    public char getC_TYPE_DEPENSE() {
-        return C_TYPE_DEPENSE;
+    public char getcTypeDepense() {
+        return cTypeDepense;
     }
 
-    public void setC_TYPE_DEPENSE(char c_TYPE_DEPENSE) {
-        C_TYPE_DEPENSE = c_TYPE_DEPENSE;
+    public void setcTypeDepense(char cTypeDepense) {
+        this.cTypeDepense = cTypeDepense;
     }
 
     public List<TYPE_DEPENSE> getType_depenses() {

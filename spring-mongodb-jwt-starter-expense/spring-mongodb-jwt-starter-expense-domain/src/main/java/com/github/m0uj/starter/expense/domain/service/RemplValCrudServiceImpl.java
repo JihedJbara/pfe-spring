@@ -23,6 +23,6 @@ public class RemplValCrudServiceImpl implements RempValCrudService {
 
     @Override
     public REMP_VALID read(UserPK4 id) {
-        return rempRepository.findByIdAndDate(id);
+        return rempRepository.findByUserPK4(id);
     }
 }

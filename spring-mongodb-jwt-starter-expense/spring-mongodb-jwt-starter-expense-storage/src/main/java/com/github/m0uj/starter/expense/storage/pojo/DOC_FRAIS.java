@@ -15,7 +15,7 @@ public class DOC_FRAIS {
 
 
     @Id
-    private long T_DOC_FRAIS;
+    private Long tDocFrais;
     private float TOTAL_FRAIS;
     private Date DT_SOUMISSION;
     private Date DT_VALIDATION_PARTIELE;
@@ -193,11 +193,11 @@ public class DOC_FRAIS {
         this.f_routes = f_routes;
     }
 
-    public long getT_DOC_FRAIS() {
-        return T_DOC_FRAIS;
+    public long gettDocFrais() {
+        return tDocFrais;
     }
 
-    public void setT_DOC_FRAIS(long t_DOC_FRAIS) {
-        T_DOC_FRAIS = t_DOC_FRAIS;
+    public void settDocFrais(long tDocFrais) {
+        this.tDocFrais = tDocFrais;
     }
 }

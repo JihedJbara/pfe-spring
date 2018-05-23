@@ -21,8 +21,8 @@ public class FraisCrudServiceImpl implements FraisCrudService {
     }
 
     @Override
-    public DOC_FRAIS read(String id) {
-        return fraisRepository.findById(id);
+    public DOC_FRAIS read(long id) {
+        return fraisRepository.findByTDocFrais(id);
     }
 
    /* public void saveSalarie(DOC_FRAIS frais) {

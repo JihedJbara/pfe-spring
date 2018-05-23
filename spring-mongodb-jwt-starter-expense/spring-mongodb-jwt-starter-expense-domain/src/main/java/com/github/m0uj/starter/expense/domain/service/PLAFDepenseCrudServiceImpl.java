@@ -23,6 +23,6 @@ public class PLAFDepenseCrudServiceImpl implements PLAFDepenseCrudService {
 
     @Override
     public PLAF_DEPENSE read(UserPK3 id) {
-        return plafRepository.findByIdAndType(id);
+        return plafRepository.findByUserPK3(id);
     }
 }

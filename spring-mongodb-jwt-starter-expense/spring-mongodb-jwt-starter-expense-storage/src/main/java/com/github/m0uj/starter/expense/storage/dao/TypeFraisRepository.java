@@ -10,6 +10,6 @@ import javax.transaction.Transactional;
  */
 @Transactional
 public interface TypeFraisRepository extends CrudRepository<TYPE_FRAIS,Character> {
-    public TYPE_FRAIS findById(char C_TYPE_DEPENSE);
+    public TYPE_FRAIS findByCTypeDepense(char cTypeDepense);
 
 }

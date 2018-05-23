@@ -11,6 +11,6 @@ import javax.transaction.Transactional;
  */
 @Transactional
 public interface FRouteRepository extends CrudRepository<F_ROUTE,Integer> {
-    public F_ROUTE findById(int T_FROUTE);
+    public F_ROUTE findByTFRoute(int tFRoute);
 
 }

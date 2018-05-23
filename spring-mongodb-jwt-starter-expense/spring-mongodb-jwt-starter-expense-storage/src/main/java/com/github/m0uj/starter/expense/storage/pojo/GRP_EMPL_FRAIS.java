@@ -1,9 +1,6 @@
 package com.github.m0uj.starter.expense.storage.pojo;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.IdClass;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import javax.sql.rowset.serial.SerialArray;
 import java.io.Serializable;
 import java.util.List;
@@ -12,13 +9,10 @@ import java.util.List;
  * Created by Jihed-pc on 16/03/2018.
  */
 @Entity
-@IdClass(UserPK2.class)
 public class GRP_EMPL_FRAIS implements Serializable {
 
-    @Id
-    private char C_GRP_EMPL_FRAIS ;
-    @Id
-    private int T_SOCAB;
+    @EmbeddedId
+    private UserPK2 userPK2;
     private String Intitule;
     private int T_PYUSER_VAL1;
     private int T_PYUSER_VAL2;
@@ -29,22 +23,16 @@ public class GRP_EMPL_FRAIS implements Serializable {
 
     @OneToMany(mappedBy="grp_empl_frais")
    private List<PLAF_DEPENSE> plaf_depenses;
-    
-    public char getC_GRP_EMPL_FRAIS() {
-        return C_GRP_EMPL_FRAIS;
+
+    public UserPK2 getUserPK2() {
+        return userPK2;
     }
 
-    public void setC_GRP_EMPL_FRAIS(char c_GRP_EMPL_FRAIS) {
-        C_GRP_EMPL_FRAIS = c_GRP_EMPL_FRAIS;
+    public void setUserPK2(UserPK2 userPK2) {
+        this.userPK2 = userPK2;
     }
 
-    public int getT_SOCAB() {
-        return T_SOCAB;
-    }
 
-    public void setT_SOCAB(int t_SOCAB) {
-        T_SOCAB = t_SOCAB;
-    }
 
     public String getIntitule() {
         return Intitule;

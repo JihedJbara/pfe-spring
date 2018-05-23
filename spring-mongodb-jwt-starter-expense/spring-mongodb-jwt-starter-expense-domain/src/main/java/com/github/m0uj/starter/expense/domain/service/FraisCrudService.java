@@ -8,7 +8,7 @@ public interface FraisCrudService {
 
     public DOC_FRAIS create(DOC_FRAIS frais);
 
-    public DOC_FRAIS read(String id);
+    public DOC_FRAIS read(long id);
 
   //  public void saveFrais (DOC_FRAIS frais);
 }

@@ -4,7 +4,6 @@ import com.github.m0uj.starter.expense.domain.service.FraisCrudService;
 import com.github.m0uj.starter.expense.storage.pojo.DOC_FRAIS;
 import com.github.m0uj.starter.expense.web.controller.dto.DOC_FRAISDTO;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -16,12 +15,13 @@ import javax.validation.Valid;
 @RequestMapping("api/v2")
 public class DocFraisController {
 
-    @Autowired
-    private FraisCrudService fraisCrudService;
+
+    private final FraisCrudService fraisCrudService;
 
     private final ModelMapper modelMapper;
 
-    public DocFraisController(ModelMapper modelMapper) {
+    public DocFraisController(FraisCrudService fraisCrudService, ModelMapper modelMapper) {
+        this.fraisCrudService = fraisCrudService;
         this.modelMapper = modelMapper;
     }
 
@@ -34,7 +34,7 @@ public class DocFraisController {
         //doc_frais.setTOTAL_FROUTE(doc_frais.getTOTAL_FROUTE());
         doc_frais.setTOTAL_FROUTE(doc_frais.getTOTAL_FROUTE());
         doc_frais.setTOTAL_FDEPENSE (doc_frais.getTOTAL_FDEPENSE());
-        doc_frais.setTOTAL_FRAIS(doc_frais.getT_DOC_FRAIS());
+        doc_frais.setTOTAL_FRAIS(doc_frais.gettDocFrais());
        // user.setEnable(true);
         return modelMapper.map(fraisCrudService.create(doc_frais), DOC_FRAISDTO.class);
     }

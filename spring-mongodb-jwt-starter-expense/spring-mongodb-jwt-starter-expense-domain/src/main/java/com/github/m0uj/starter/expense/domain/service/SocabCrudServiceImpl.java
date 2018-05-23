@@ -22,6 +22,6 @@ public class SocabCrudServiceImpl implements SocabCrudService{
 
     @Override
     public SOCAB read(int id) {
-        return socabRepository.findById(id);
+        return socabRepository.findByTSocab(id);
     }
 }

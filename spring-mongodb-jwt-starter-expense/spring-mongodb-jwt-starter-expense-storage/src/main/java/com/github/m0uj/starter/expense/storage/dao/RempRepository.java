@@ -11,6 +11,6 @@ import javax.transaction.Transactional;
  */
 @Transactional
 public interface RempRepository extends CrudRepository<REMP_VALID,UserPK4> {
-  public REMP_VALID findByIdAndDate (UserPK4 id);
+  public REMP_VALID findByUserPK4 (UserPK4 id);
 
 }

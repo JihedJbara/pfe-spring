@@ -8,15 +8,12 @@ import java.util.Date;
  * Created by Jihed-pc on 13/03/2018.
  */
 @Entity
-@IdClass(UserPK3.class)
+
 public class PLAF_DEPENSE implements Serializable {
 
-    @Id
-    private char C_TYPE_DEPENSE;
-    @Id
-    private char C_GRP_EMPL_FRAIS;
-    @Id
-    private int T_SOCAB;
+
+    @EmbeddedId
+    private UserPK3 userPK3;
     private float PLAFOND;
     private Date DT_DEB;
     private Date DT_FIN;
@@ -61,16 +58,12 @@ public class PLAF_DEPENSE implements Serializable {
         this.DT_FIN = DT_FIN;
     }
 
-    public void setC_TYPE_DEPENSE(char c_TYPE_DEPENSE) {
-        C_TYPE_DEPENSE = c_TYPE_DEPENSE;
+    public UserPK3 getUserPK3() {
+        return userPK3;
     }
 
-    public void setC_GRP_EMPL_FRAIS(char c_GRP_EMPL_FRAIS) {
-        C_GRP_EMPL_FRAIS = c_GRP_EMPL_FRAIS;
-    }
-
-    public void setT_SOCAB(int t_SOCAB) {
-        T_SOCAB = t_SOCAB;
+    public void setUserPK3(UserPK3 userPK3) {
+        this.userPK3 = userPK3;
     }
 
     public void setT_USER_CRE(int t_USER_CRE) {
@@ -89,17 +82,7 @@ public class PLAF_DEPENSE implements Serializable {
         this.DT_MOD = DT_MOD;
     }
 
-    public char getC_TYPE_DEPENSE() {
-        return C_TYPE_DEPENSE;
-    }
 
-    public char getC_GRP_EMPL_FRAIS() {
-        return C_GRP_EMPL_FRAIS;
-    }
-
-    public int getT_SOCAB() {
-        return T_SOCAB;
-    }
 
     public int getT_USER_CRE() {
         return T_USER_CRE;

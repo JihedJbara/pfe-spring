@@ -10,7 +10,7 @@ import java.util.Date;
 public class F_DEPENSE {
 
     @Id
-    private int T_FDEPENSE ;
+    private int tFDepense;
     private int T_DOC_FRAIS;
     private char C_TYPE_DEPENSE;
     private Date DT_FDEPENSE;
@@ -24,12 +24,12 @@ public class F_DEPENSE {
     @JoinColumn(name="CODE_DOC_FRAIS")
     private DOC_FRAIS doc_frais;
 
-    public int getT_FDEPENSE() {
-        return T_FDEPENSE;
+    public int gettFDepense() {
+        return tFDepense;
     }
 
-    public void setT_FDEPENSE(int t_FDEPENSE) {
-        T_FDEPENSE = t_FDEPENSE;
+    public void settFDepense(int tFDepense) {
+        this.tFDepense = tFDepense;
     }
 
     public int getT_DOC_FRAIS() {

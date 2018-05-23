@@ -10,5 +10,5 @@ import javax.transaction.Transactional;
  */
 @Transactional
 public interface SocabRepository extends CrudRepository<SOCAB,Integer> {
-    public SOCAB findById(int T_SOCAB);
+    public SOCAB findByTSocab(int T_SOCAB);
 }

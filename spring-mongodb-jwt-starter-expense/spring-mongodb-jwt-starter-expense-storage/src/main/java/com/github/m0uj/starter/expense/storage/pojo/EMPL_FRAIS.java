@@ -7,14 +7,12 @@ import java.io.Serializable;
  * Created by Jihed-pc on 16/03/2018.
  */
 @Entity
-@IdClass(UserPK.class)
+
 public class EMPL_FRAIS implements Serializable{
-    @Id
-    private int T_EMPLOYE;
-    @Id
-    private char C_GRP_EMPL_FRAIS;
-    @Id
-    private int T_SOCAB;
+
+    @EmbeddedId
+    private UserPK userPK;
+
     private String ST;
     private String MAT_VEH;
     private String MARQUE_VEH;
@@ -37,28 +35,12 @@ public class EMPL_FRAIS implements Serializable{
     })
    private GRP_EMPL_FRAIS grp_empl_frais;
 
-    public int getT_EMPLOYE() {
-        return T_EMPLOYE;
+    public UserPK getUserPK() {
+        return userPK;
     }
 
-    public void setT_EMPLOYE(int t_EMPLOYE) {
-        T_EMPLOYE = t_EMPLOYE;
-    }
-
-    public char getC_GRP_EMPL_FRAIS() {
-        return C_GRP_EMPL_FRAIS;
-    }
-
-    public void setC_GRP_EMPL_FRAIS(char c_GRP_EMPL_FRAIS) {
-        C_GRP_EMPL_FRAIS = c_GRP_EMPL_FRAIS;
-    }
-
-    public int getT_SOCAB() {
-        return T_SOCAB;
-    }
-
-    public void setT_SOCAB(int t_SOCAB) {
-        T_SOCAB = t_SOCAB;
+    public void setUserPK(UserPK userPK) {
+        this.userPK = userPK;
     }
 
     public String getST() {
