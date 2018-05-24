@@ -14,9 +14,9 @@ public class GRP_EMPL_FRAIS implements Serializable {
     @EmbeddedId
     private UserPK2 userPK2;
     private String Intitule;
-    private int T_PYUSER_VAL1;
-    private int T_PYUSER_VAL2;
-    private int T_PYUSER_VAL3;
+    private int tPyUserVal1;
+    private int tPyUserVal2;
+    private int tPyUserVal3;
 
   @OneToMany(mappedBy="grp_empl_frais")
     private List<EMPL_FRAIS> empl_frais;
@@ -42,34 +42,29 @@ public class GRP_EMPL_FRAIS implements Serializable {
         Intitule = intitule;
     }
 
-    public int getT_PYUSER_VAL1() {
-        return T_PYUSER_VAL1;
+    public int gettPyUserVal1() {
+        return tPyUserVal1;
     }
 
-    public void setT_PYUSER_VAL1(int t_PYUSER_VAL1) {
-        T_PYUSER_VAL1 = t_PYUSER_VAL1;
+    public void settPyUserVal1(int tPyUserVal1) {
+        this.tPyUserVal1 = tPyUserVal1;
     }
 
-    public int getT_PYUSER_VAL2() {
-        return T_PYUSER_VAL2;
+    public int gettPyUserVal2() {
+        return tPyUserVal2;
     }
 
-    public void setT_PYUSER_VAL2(int t_PYUSER_VAL2) {
-        T_PYUSER_VAL2 = t_PYUSER_VAL2;
+    public void settPyUserVal2(int tPyUserVal2) {
+        this.tPyUserVal2 = tPyUserVal2;
     }
 
-    public int getT_PYUSER_VAL3() {
-        return T_PYUSER_VAL3;
+    public int gettPyUserVal3() {
+        return tPyUserVal3;
     }
 
-    public void setT_PYUSER_VAL3(int t_PYUSER_VAL3) {
-        T_PYUSER_VAL3 = t_PYUSER_VAL3;
+    public void settPyUserVal3(int tPyUserVal3) {
+        this.tPyUserVal3 = tPyUserVal3;
     }
-
-  
-  
-  
-
 
     /**public List<PLAF_DEPENSE> getPlaf_depenses() {
         return plaf_depenses;

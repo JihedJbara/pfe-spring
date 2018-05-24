@@ -10,9 +10,9 @@ import java.util.Date;
 @Entity
 public class Salarie extends User {
 
-    private String Immatriculation;
-    private int NCIN;
-    private Date DT_DELIV_CIN;
+    private String immatriculation;
+    private int ncin;
+    private Date dtDelivCin;
     private byte[] photo;
 
     @ManyToOne(fetch=FetchType.LAZY)
@@ -21,25 +21,26 @@ public class Salarie extends User {
 
 
     public String getImmatriculation()
-    {return Immatriculation;}
+    {return immatriculation;}
 
     public void setImmatriculation(String immatriculation)
-    {Immatriculation = immatriculation;}
+    {
+        this.immatriculation = immatriculation;}
 
-    public int getNCIN() {
-        return NCIN;
+    public int getNcin() {
+        return ncin;
     }
 
-    public void setNCIN(int NCIN) {
-        this.NCIN = NCIN;
+    public void setNcin(int ncin) {
+        this.ncin = ncin;
     }
 
     public Date getDT_DELIV_CN() {
-        return DT_DELIV_CIN;
+        return dtDelivCin;
     }
 
     public void setDT_DELIV_CN(Date DT_DELIV_CN) {
-        this.DT_DELIV_CIN = DT_DELIV_CN;
+        this.dtDelivCin = DT_DELIV_CN;
     }
 
     public byte[] getPhoto() {

@@ -13,14 +13,14 @@ public class EMPL_FRAIS implements Serializable{
     @EmbeddedId
     private UserPK userPK;
 
-    private String ST;
-    private String MAT_VEH;
-    private String MARQUE_VEH;
-    private int KM;
-    private int DERN_KM;
-    private float FORFAIT_KM;
-    private char C_FORFAIT;
-    private int TYPE_VOITURE;
+    private String st;
+    private String matVeh;
+    private String marqueVeh;
+    private int km;
+    private int dernKm;
+    private float forfaitKm;
+    private char cForfait;
+    private int typeVoiture;
 
     @ManyToOne(fetch= FetchType.LAZY)
     @JoinColumn(name="EMPLOY_ID")
@@ -43,68 +43,68 @@ public class EMPL_FRAIS implements Serializable{
         this.userPK = userPK;
     }
 
-    public String getST() {
-        return ST;
+    public String getSt() {
+        return st;
     }
 
-    public void setST(String ST) {
-        this.ST = ST;
+    public void setSt(String st) {
+        this.st = st;
     }
 
-    public String getMAT_VEH() {
-        return MAT_VEH;
+    public String getMatVeh() {
+        return matVeh;
     }
 
-    public void setMAT_VEH(String MAT_VEH) {
-        this.MAT_VEH = MAT_VEH;
+    public void setMatVeh(String matVeh) {
+        this.matVeh = matVeh;
     }
 
-    public String getMARQUE_VEH() {
-        return MARQUE_VEH;
+    public String getMarqueVeh() {
+        return marqueVeh;
     }
 
-    public void setMARQUE_VEH(String MARQUE_VEH) {
-        this.MARQUE_VEH = MARQUE_VEH;
+    public void setMarqueVeh(String marqueVeh) {
+        this.marqueVeh = marqueVeh;
     }
 
-    public int getKM() {
-        return KM;
+    public int getKm() {
+        return km;
     }
 
-    public void setKM(int KM) {
-        this.KM = KM;
+    public void setKm(int km) {
+        this.km = km;
     }
 
-    public int getDERN_KM() {
-        return DERN_KM;
+    public int getDernKm() {
+        return dernKm;
     }
 
-    public void setDERN_KM(int DERN_KM) {
-        this.DERN_KM = DERN_KM;
+    public void setDernKm(int dernKm) {
+        this.dernKm = dernKm;
     }
 
-    public float getFORFAIT_KM() {
-        return FORFAIT_KM;
+    public float getForfaitKm() {
+        return forfaitKm;
     }
 
-    public void setFORFAIT_KM(float FORFAIT_KM) {
-        this.FORFAIT_KM = FORFAIT_KM;
+    public void setForfaitKm(float forfaitKm) {
+        this.forfaitKm = forfaitKm;
     }
 
-    public char getC_FORFAIT() {
-        return C_FORFAIT;
+    public char getcForfait() {
+        return cForfait;
     }
 
-    public void setC_FORFAIT(char c_FORFAIT) {
-        C_FORFAIT = c_FORFAIT;
+    public void setcForfait(char cForfait) {
+        this.cForfait = cForfait;
     }
 
-    public int getTYPE_VOITURE() {
-        return TYPE_VOITURE;
+    public int getTypeVoiture() {
+        return typeVoiture;
     }
 
-    public void setTYPE_VOITURE(int TYPE_VOITURE) {
-        this.TYPE_VOITURE = TYPE_VOITURE;
+    public void setTypeVoiture(int typeVoiture) {
+        this.typeVoiture = typeVoiture;
     }
 
     public EMPLOYE getEmploye() {

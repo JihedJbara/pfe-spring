@@ -11,10 +11,10 @@ public class F_ROUTE {
 
     @Id
     private int tFRoute;
-    private int T_DOC_FRAIS;
-    private Date DT_FROUTE;
-    private String REMARQUE;
-    private float MONTANT;
+    private int tDocFrais;
+    private Date dtFroute;
+    private String remarque;
+    private float montant;
 
     @ManyToOne(fetch= FetchType.LAZY)
     @JoinColumn(name="DOC_FRAIS_ID")
@@ -28,36 +28,36 @@ public class F_ROUTE {
         this.tFRoute = tFRoute;
     }
 
-    public int getT_DOC_FRAIS() {
-        return T_DOC_FRAIS;
+    public int gettDocFrais() {
+        return tDocFrais;
     }
 
-    public void setT_DOC_FRAIS(int t_DOC_FRAIS) {
-        T_DOC_FRAIS = t_DOC_FRAIS;
+    public void settDocFrais(int tDocFrais) {
+        this.tDocFrais = tDocFrais;
     }
 
-    public Date getDT_FROUTE() {
-        return DT_FROUTE;
+    public Date getDtFroute() {
+        return dtFroute;
     }
 
-    public void setDT_FROUTE(Date DT_FROUTE) {
-        this.DT_FROUTE = DT_FROUTE;
+    public void setDtFroute(Date dtFroute) {
+        this.dtFroute = dtFroute;
     }
 
-    public String getREMARQUE() {
-        return REMARQUE;
+    public String getRemarque() {
+        return remarque;
     }
 
-    public void setREMARQUE(String REMARQUE) {
-        this.REMARQUE = REMARQUE;
+    public void setRemarque(String remarque) {
+        this.remarque = remarque;
     }
 
-    public float getMONTANT() {
-        return MONTANT;
+    public float getMontant() {
+        return montant;
     }
 
-    public void setMONTANT(float MONTANT) {
-        this.MONTANT = MONTANT;
+    public void setMontant(float montant) {
+        this.montant = montant;
     }
 
     public DOC_FRAIS getDoc_fraiss() {

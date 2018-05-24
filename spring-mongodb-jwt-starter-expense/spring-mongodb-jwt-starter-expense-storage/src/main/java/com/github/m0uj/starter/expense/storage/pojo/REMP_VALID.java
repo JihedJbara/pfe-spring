@@ -18,49 +18,57 @@ public class REMP_VALID implements Serializable{
 
 
 
-    private Date DATE_FIN;
-    private int T_USER_CRE;
-    private int T_USER_MOD;
-    private Date DT_CRE;
-    private Date DT_FIN;
+    private Date dateFin;
+    private int tUserCre;
+    private int tUserMod;
+    private Date dtCre;
+    private Date dtFin;
 
-    public Date getDATE_FIN() {
-        return DATE_FIN;
+    public UserPK4 getUserPK4() {
+        return userPK4;
     }
 
-    public void setDATE_FIN(Date DATE_FIN) {
-        this.DATE_FIN = DATE_FIN;
+    public void setUserPK4(UserPK4 userPK4) {
+        this.userPK4 = userPK4;
     }
 
-    public int getT_USER_CRE() {
-        return T_USER_CRE;
+    public Date getDateFin() {
+        return dateFin;
     }
 
-    public void setT_USER_CRE(int t_USER_CRE) {
-        T_USER_CRE = t_USER_CRE;
+    public void setDateFin(Date dateFin) {
+        this.dateFin = dateFin;
     }
 
-    public int getT_USER_MOD() {
-        return T_USER_MOD;
+    public int gettUserCre() {
+        return tUserCre;
     }
 
-    public void setT_USER_MOD(int t_USER_MOD) {
-        T_USER_MOD = t_USER_MOD;
+    public void settUserCre(int tUserCre) {
+        this.tUserCre = tUserCre;
     }
 
-    public Date getDT_CRE() {
-        return DT_CRE;
+    public int gettUserMod() {
+        return tUserMod;
     }
 
-    public void setDT_CRE(Date DT_CRE) {
-        this.DT_CRE = DT_CRE;
+    public void settUserMod(int tUserMod) {
+        this.tUserMod = tUserMod;
     }
 
-    public Date getDT_FIN() {
-        return DT_FIN;
+    public Date getDtCre() {
+        return dtCre;
     }
 
-    public void setDT_FIN(Date DT_FIN) {
-        this.DT_FIN = DT_FIN;
+    public void setDtCre(Date dtCre) {
+        this.dtCre = dtCre;
+    }
+
+    public Date getDtFin() {
+        return dtFin;
+    }
+
+    public void setDtFin(Date dtFin) {
+        this.dtFin = dtFin;
     }
 }

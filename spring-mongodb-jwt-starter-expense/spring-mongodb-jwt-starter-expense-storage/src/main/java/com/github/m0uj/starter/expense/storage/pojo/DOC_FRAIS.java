@@ -16,19 +16,19 @@ public class DOC_FRAIS {
 
     @Id
     private Long tDocFrais;
-    private float TOTAL_FRAIS;
-    private Date DT_SOUMISSION;
-    private Date DT_VALIDATION_PARTIELE;
-    private Date DT_VALIDATION;
-    private Date DT_PAYEMENT;
-    private Date DT_REFUS;
-    private String MOTIF_REFUS;
-    private int TOTAL_FROUTE;
-    private float TOTAL_FDEPENSE;
-    private int T_USER_CRE;
-    private int T_USER_MOD;
-    private int T_PYUSER ;
-    private int TOTAL_NBRE_KM;
+    private float totalFrais;
+    private Date dtSoumission;
+    private Date dtValidationPartiele;
+    private Date dtValidation;
+    private Date dtPayement;
+    private Date dtRefus;
+    private String motifRefus;
+    private int totalFroute;
+    private float totalDepense;
+    private int tUserCre;
+    private int tUserModif;
+    private int tPUser ;
+    private int totalNbreKm;
 
 
     @OneToMany(mappedBy="doc_frais")
@@ -44,130 +44,135 @@ public class DOC_FRAIS {
 
 
     @CreatedDate
-    private Date DT_CRE;
+    private Date dtCre;
 
     @LastModifiedDate
-    private Date DT_MOD;
+    private Date dtMod;
 
 
-    public float getTOTAL_FRAIS() {
-        return TOTAL_FRAIS;
+    public Date getDtCre() {
+        return dtCre;
     }
 
-    public void setTOTAL_FRAIS(float TOTAL_FRAIS) {
-        this.TOTAL_FRAIS = TOTAL_FRAIS;
+    public void setDtCre(Date dtCre) {
+        this.dtCre = dtCre;
     }
 
-    public Date getDT_SOUMISSION() {
-        return DT_SOUMISSION;
+    public Date getDtMod() {
+        return dtMod;
     }
 
-    public void setDT_SOUMISSION(Date DT_SOUMISSION) {
-        this.DT_SOUMISSION = DT_SOUMISSION;
+    public void setDtMod(Date dtMod) {
+        this.dtMod = dtMod;
     }
 
-    public Date getDT_VALIDATION_PARTIELE() {
-        return DT_VALIDATION_PARTIELE;
+    public Date getDtValidation() {
+        return dtValidation;
     }
 
-    public void setDT_VALIDATION_PARTIELE(Date DT_VALIDATION_PARTIELE) {
-        this.DT_VALIDATION_PARTIELE = DT_VALIDATION_PARTIELE;
+    public float getTotalFrais() {
+        return totalFrais;
     }
 
-    public Date getDT_VALIDATION() {
-        return DT_VALIDATION;
+    public void setTotalFrais(float totalFrais) {
+        this.totalFrais = totalFrais;
     }
 
-    public void setDT_VALIDATION(Date DT_VALIDATION) {
-        this.DT_VALIDATION = DT_VALIDATION;
+    public Date getDtSoumission() {
+        return dtSoumission;
     }
 
-    public Date getDT_PAYEMENT() {
-        return DT_PAYEMENT;
+    public void setDtSoumission(Date dtSoumission) {
+        this.dtSoumission = dtSoumission;
     }
 
-    public void setDT_PAYEMENT(Date DT_PAYEMENT) {
-        this.DT_PAYEMENT = DT_PAYEMENT;
+    public Date getDtValidationPartiele() {
+        return dtValidationPartiele;
     }
 
-    public Date getDT_REFUS() {
-        return DT_REFUS;
+    public void setDtValidationPartiele(Date dtValidationPartiele) {
+        this.dtValidationPartiele = dtValidationPartiele;
     }
 
-    public void setDT_REFUS(Date DT_REFUS) {
-        this.DT_REFUS = DT_REFUS;
+    public Date getDtPayement() {
+        return dtPayement;
     }
 
-    public String getMOTIF_REFUS() {
-        return MOTIF_REFUS;
+    public void setDtPayement(Date dtPayement) {
+        this.dtPayement = dtPayement;
     }
 
-    public void setMOTIF_REFUS(String MOTIF_REFUS) {
-        this.MOTIF_REFUS = MOTIF_REFUS;
+    public Date getDtRefus() {
+        return dtRefus;
     }
 
-    public int getTOTAL_FROUTE() {
-        return TOTAL_FROUTE;
+    public void setDtRefus(Date dtRefus) {
+        this.dtRefus = dtRefus;
     }
 
-    public void setTOTAL_FROUTE(int TOTAL_FROUTE) {
-        this.TOTAL_FROUTE = TOTAL_FROUTE;
+    public String getMotifRefus() {
+        return motifRefus;
     }
 
-    public float getTOTAL_FDEPENSE() {
-        return TOTAL_FDEPENSE;
+    public void setMotifRefus(String motifRefus) {
+        this.motifRefus = motifRefus;
     }
 
-    public void setTOTAL_FDEPENSE(float TOTAL_FDEPENSE) {
-        this.TOTAL_FDEPENSE = TOTAL_FDEPENSE;
+    public int getTotalFroute() {
+        return totalFroute;
     }
 
-    public int getT_USER_CRE() {
-        return T_USER_CRE;
+    public void setTotalFroute(int totalFroute) {
+        this.totalFroute = totalFroute;
     }
 
-    public void setT_USER_CRE(int t_USER_CRE) {
-        T_USER_CRE = t_USER_CRE;
+    public float getTotalDepense() {
+        return totalDepense;
     }
 
-    public int getT_USER_MOD() {
-        return T_USER_MOD;
+    public void setTotalDepense(float totalDepense) {
+        this.totalDepense = totalDepense;
     }
 
-    public void setT_USER_MOD(int t_USER_MOD) {
-        T_USER_MOD = t_USER_MOD;
+    public int gettUserCre() {
+        return tUserCre;
     }
 
-    public int getT_PYUSER() {
-        return T_PYUSER;
+    public void settUserCre(int tUserCre) {
+        this.tUserCre = tUserCre;
     }
 
-    public void setT_PYUSER(int t_PYUSER) {
-        T_PYUSER = t_PYUSER;
-    }
-    public int getTOTAL_NBRE_KM() {
-        return TOTAL_NBRE_KM;
+    public int gettUserModif() {
+        return tUserModif;
     }
 
-    public void setTOTAL_NBRE_KM(int TOTAL_NBRE_KM) {
-        this.TOTAL_NBRE_KM = TOTAL_NBRE_KM;
+    public void settUserModif(int tUserModif) {
+        this.tUserModif = tUserModif;
     }
 
-    public Date getDT_CRE() {
-        return DT_CRE;
+    public int gettPUser() {
+        return tPUser;
     }
 
-    public void setDT_CRE(Date DT_CRE) {
-        this.DT_CRE = DT_CRE;
+    public void settPUser(int tPUser) {
+        this.tPUser = tPUser;
     }
 
-    public Date getDT_MOD() {
-        return DT_MOD;
+    public int getTotalNbreKm() {
+        return totalNbreKm;
     }
 
-    public void setDT_MOD(Date DT_MOD) {
-        this.DT_MOD = DT_MOD;
+    public void setTotalNbreKm(int totalNbreKm) {
+        this.totalNbreKm = totalNbreKm;
     }
+
+    public void setDtValidation(Date dtValidation) {
+        this.dtValidation = dtValidation;
+    }
+
+
+
+
 
     public EMPLOYE getEmploye() {
         return employe;

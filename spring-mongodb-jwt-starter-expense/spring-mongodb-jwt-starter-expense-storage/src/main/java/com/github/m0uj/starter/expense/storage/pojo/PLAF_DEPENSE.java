@@ -15,12 +15,12 @@ public class PLAF_DEPENSE implements Serializable {
     @EmbeddedId
     private UserPK3 userPK3;
     private float PLAFOND;
-    private Date DT_DEB;
-    private Date DT_FIN;
-    private int T_USER_CRE;
-    private int T_USER_MOD;
-    private Date DT_CRE;
-    private Date DT_MOD;
+    private Date dtDeb;
+    private Date dtFin;
+    private int tUserCre;
+    private int tUserMod;
+    private Date dtCre;
+    private Date deMod;
 
     @ManyToOne(fetch= FetchType.LAZY)
     @JoinColumn(name="TYPE_DEP_ID")
@@ -42,62 +42,52 @@ public class PLAF_DEPENSE implements Serializable {
         this.PLAFOND = PLAFOND;
     }
 
-    public Date getDT_DEB() {
-        return DT_DEB;
+    public Date getDtDeb() {
+        return dtDeb;
     }
 
-    public void setDT_DEB(Date DT_DEB) {
-        this.DT_DEB = DT_DEB;
+    public void setDtDeb(Date dtDeb) {
+        this.dtDeb = dtDeb;
     }
 
-    public Date getDT_FIN() {
-        return DT_FIN;
+    public Date getDtFin() {
+        return dtFin;
     }
 
-    public void setDT_FIN(Date DT_FIN) {
-        this.DT_FIN = DT_FIN;
+    public void setDtFin(Date dtFin) {
+        this.dtFin = dtFin;
     }
 
-    public UserPK3 getUserPK3() {
-        return userPK3;
+    public int gettUserCre() {
+        return tUserCre;
     }
 
-    public void setUserPK3(UserPK3 userPK3) {
-        this.userPK3 = userPK3;
+    public void settUserCre(int tUserCre) {
+        this.tUserCre = tUserCre;
     }
 
-    public void setT_USER_CRE(int t_USER_CRE) {
-        T_USER_CRE = t_USER_CRE;
+    public int gettUserMod() {
+        return tUserMod;
     }
 
-    public void setT_USER_MOD(int t_USER_MOD) {
-        T_USER_MOD = t_USER_MOD;
+    public void settUserMod(int tUserMod) {
+        this.tUserMod = tUserMod;
     }
 
-    public void setDT_CRE(Date DT_CRE) {
-        this.DT_CRE = DT_CRE;
+    public Date getDtCre() {
+        return dtCre;
     }
 
-    public void setDT_MOD(Date DT_MOD) {
-        this.DT_MOD = DT_MOD;
+    public void setDtCre(Date dtCre) {
+        this.dtCre = dtCre;
     }
 
-
-
-    public int getT_USER_CRE() {
-        return T_USER_CRE;
+    public Date getDeMod() {
+        return deMod;
     }
 
-    public int getT_USER_MOD() {
-        return T_USER_MOD;
-    }
-
-    public Date getDT_CRE() {
-        return DT_CRE;
-    }
-
-    public Date getDT_MOD() {
-        return DT_MOD;
+    public void setDeMod(Date deMod) {
+        this.deMod = deMod;
     }
 
     public TYPE_DEPENSE getType_depense() {

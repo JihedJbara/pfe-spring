@@ -15,17 +15,17 @@ public class TYPE_FRAIS {
     @Id
     private char cTypeDepense;
 
-    private String INITULE;
+    private String intitule;
 
     @OneToMany(mappedBy="type_frais")
     private List<TYPE_DEPENSE> type_depenses;
 
-    public String getINITULE() {
-        return INITULE;
+    public String getIntitule() {
+        return intitule;
     }
 
-    public void setINITULE(String INITULE) {
-        this.INITULE = INITULE;
+    public void setIntitule(String intitule) {
+        this.intitule = intitule;
     }
 
     public char getcTypeDepense() {

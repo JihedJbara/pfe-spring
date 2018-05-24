@@ -10,8 +10,8 @@ import java.util.List;
 public class TYPE_DEPENSE {
     @Id
     private char cTypeDepense;
-    private String INTITULE;
-    private char C_TYPE_FRAIS;
+    private String intitule;
+    private char cTypeFrais;
 
     @OneToMany(mappedBy="type_depense")
     private List<PLAF_DEPENSE> plaf_depenses;
@@ -28,20 +28,20 @@ public class TYPE_DEPENSE {
         this.cTypeDepense = cTypeDepense;
     }
 
-    public String getINTITULE() {
-        return INTITULE;
+    public String getIntitule() {
+        return intitule;
     }
 
-    public void setINTITULE(String INTITULE) {
-        this.INTITULE = INTITULE;
+    public void setIntitule(String intitule) {
+        this.intitule = intitule;
     }
 
-    public char getC_TYPE_FRAIS() {
-        return C_TYPE_FRAIS;
+    public char getcTypeFrais() {
+        return cTypeFrais;
     }
 
-    public void setC_TYPE_FRAIS(char c_TYPE_FRAIS) {
-        C_TYPE_FRAIS = c_TYPE_FRAIS;
+    public void setcTypeFrais(char cTypeFrais) {
+        this.cTypeFrais = cTypeFrais;
     }
 
     public List<PLAF_DEPENSE> getPlaf_depenses() {

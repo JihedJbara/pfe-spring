@@ -32,9 +32,9 @@ public class DocFraisController {
 
         DOC_FRAIS doc_frais = modelMapper.map(doc_fraisdto, DOC_FRAIS.class);
         //doc_frais.setTOTAL_FROUTE(doc_frais.getTOTAL_FROUTE());
-        doc_frais.setTOTAL_FROUTE(doc_frais.getTOTAL_FROUTE());
-        doc_frais.setTOTAL_FDEPENSE (doc_frais.getTOTAL_FDEPENSE());
-        doc_frais.setTOTAL_FRAIS(doc_frais.gettDocFrais());
+        doc_frais.setTotalFroute(doc_frais.getTotalFroute());
+        doc_frais.setTotalDepense (doc_frais.getTotalDepense());
+        doc_frais.setTotalFrais(doc_frais.gettDocFrais());
        // user.setEnable(true);
         return modelMapper.map(fraisCrudService.create(doc_frais), DOC_FRAISDTO.class);
     }

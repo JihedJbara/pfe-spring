@@ -10,19 +10,19 @@ import java.util.List;
 @Entity
 public class EMPLOYE {
 
-    private int T_SOCAB;
+    private int tSocab;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int T_EMPLOYE;
+    private int tEmploye;
 
-    private String MAT_EMPL;
-    private int ID_CARTE;
-    private String NOM;
-    private String PRENOM ;
-    private int NCIN;
+    private String matEmpl;
+    private int idCarte;
+    private String nom;
+    private String prenom ;
+    private int nCin;
     private byte photo;
-    private Date DATE_DELIV_CIN;
+    private Date dateDelivCin;
 
     @OneToMany(mappedBy="employe")
     private List<EMPL_FRAIS> empl_frais;
@@ -31,61 +31,60 @@ public class EMPLOYE {
     private List<DOC_FRAIS> doc_frais;
 
 
-
-    public int getT_SOCAB() {
-        return T_SOCAB;
+    public int gettSocab() {
+        return tSocab;
     }
 
-    public void setT_SOCAB(int t_SOCAB) {
-        T_SOCAB = t_SOCAB;
+    public void settSocab(int tSocab) {
+        this.tSocab = tSocab;
     }
 
-    public int getT_EMPLOYE() {
-        return T_EMPLOYE;
+    public int gettEmploye() {
+        return tEmploye;
     }
 
-    public void setT_EMPLOYE(int t_EMPLOYE) {
-        T_EMPLOYE = t_EMPLOYE;
+    public void settEmploye(int tEmploye) {
+        this.tEmploye = tEmploye;
     }
 
-    public String getMAT_EMPL() {
-        return MAT_EMPL;
+    public String getMatEmpl() {
+        return matEmpl;
     }
 
-    public void setMAT_EMPL(String MAT_EMPL) {
-        this.MAT_EMPL = MAT_EMPL;
+    public void setMatEmpl(String matEmpl) {
+        this.matEmpl = matEmpl;
     }
 
-    public int getID_CARTE() {
-        return ID_CARTE;
+    public int getIdCarte() {
+        return idCarte;
     }
 
-    public void setID_CARTE(int ID_CARTE) {
-        this.ID_CARTE = ID_CARTE;
+    public void setIdCarte(int idCarte) {
+        this.idCarte = idCarte;
     }
 
-    public String getNOM() {
-        return NOM;
+    public String getNom() {
+        return nom;
     }
 
-    public void setNOM(String NOM) {
-        this.NOM = NOM;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
-    public String getPRENOM() {
-        return PRENOM;
+    public String getPrenom() {
+        return prenom;
     }
 
-    public void setPRENOM(String PRENOM) {
-        this.PRENOM = PRENOM;
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
     }
 
-    public int getNCIN() {
-        return NCIN;
+    public int getnCin() {
+        return nCin;
     }
 
-    public void setNCIN(int NCIN) {
-        this.NCIN = NCIN;
+    public void setnCin(int nCin) {
+        this.nCin = nCin;
     }
 
     public byte getPhoto() {
@@ -96,12 +95,12 @@ public class EMPLOYE {
         this.photo = photo;
     }
 
-    public Date getDATE_DELIV_CIN() {
-        return DATE_DELIV_CIN;
+    public Date getDateDelivCin() {
+        return dateDelivCin;
     }
 
-    public void setDATE_DELIV_CIN(Date DATE_DELIV_CIN) {
-        this.DATE_DELIV_CIN = DATE_DELIV_CIN;
+    public void setDateDelivCin(Date dateDelivCin) {
+        this.dateDelivCin = dateDelivCin;
     }
 
     public List<EMPL_FRAIS> getEmpl_frais() {

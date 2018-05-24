@@ -11,14 +11,14 @@ public class F_DEPENSE {
 
     @Id
     private int tFDepense;
-    private int T_DOC_FRAIS;
-    private char C_TYPE_DEPENSE;
-    private Date DT_FDEPENSE;
-    private String REMARQUE;
-    private float MONTANT;
-    private float MT_ACCP;
-    private float MT_DEPASS;
-    private float PLAFOND;
+    private int tDocFrais;
+    private char cTypeDepense;
+    private Date dtFdepense;
+    private String remarque;
+    private float montant;
+    private float mtAccp;
+    private float mtDepass;
+    private float plafond;
 
     @ManyToOne(fetch= FetchType.LAZY)
     @JoinColumn(name="CODE_DOC_FRAIS")
@@ -32,68 +32,68 @@ public class F_DEPENSE {
         this.tFDepense = tFDepense;
     }
 
-    public int getT_DOC_FRAIS() {
-        return T_DOC_FRAIS;
+    public int gettDocFrais() {
+        return tDocFrais;
     }
 
-    public void setT_DOC_FRAIS(int t_DOC_FRAIS) {
-        T_DOC_FRAIS = t_DOC_FRAIS;
+    public void settDocFrais(int tDocFrais) {
+        this.tDocFrais = tDocFrais;
     }
 
-    public char getC_TYPE_DEPENSE() {
-        return C_TYPE_DEPENSE;
+    public char getcTypeDepense() {
+        return cTypeDepense;
     }
 
-    public void setC_TYPE_DEPENSE(char c_TYPE_DEPENSE) {
-        C_TYPE_DEPENSE = c_TYPE_DEPENSE;
+    public void setcTypeDepense(char cTypeDepense) {
+        this.cTypeDepense = cTypeDepense;
     }
 
-    public Date getDT_FDEPENSE() {
-        return DT_FDEPENSE;
+    public Date getDtFdepense() {
+        return dtFdepense;
     }
 
-    public void setDT_FDEPENSE(Date DT_FDEPENSE) {
-        this.DT_FDEPENSE = DT_FDEPENSE;
+    public void setDtFdepense(Date dtFdepense) {
+        this.dtFdepense = dtFdepense;
     }
 
-    public String getREMARQUE() {
-        return REMARQUE;
+    public String getRemarque() {
+        return remarque;
     }
 
-    public void setREMARQUE(String REMARQUE) {
-        this.REMARQUE = REMARQUE;
+    public void setRemarque(String remarque) {
+        this.remarque = remarque;
     }
 
-    public float getMONTANT() {
-        return MONTANT;
+    public float getMontant() {
+        return montant;
     }
 
-    public void setMONTANT(float MONTANT) {
-        this.MONTANT = MONTANT;
+    public void setMontant(float montant) {
+        this.montant = montant;
     }
 
-    public float getMT_ACCP() {
-        return MT_ACCP;
+    public float getMtAccp() {
+        return mtAccp;
     }
 
-    public void setMT_ACCP(float MT_ACCP) {
-        this.MT_ACCP = MT_ACCP;
+    public void setMtAccp(float mtAccp) {
+        this.mtAccp = mtAccp;
     }
 
-    public float getMT_DEPASS() {
-        return MT_DEPASS;
+    public float getMtDepass() {
+        return mtDepass;
     }
 
-    public void setMT_DEPASS(float MT_DEPASS) {
-        this.MT_DEPASS = MT_DEPASS;
+    public void setMtDepass(float mtDepass) {
+        this.mtDepass = mtDepass;
     }
 
-    public float getPLAFOND() {
-        return PLAFOND;
+    public float getPlafond() {
+        return plafond;
     }
 
-    public void setPLAFOND(float PLAFOND) {
-        this.PLAFOND = PLAFOND;
+    public void setPlafond(float plafond) {
+        this.plafond = plafond;
     }
 
     public DOC_FRAIS getDoc_frais() {
